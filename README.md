@@ -7,4 +7,6 @@ Fashioned after the inset trees on the historic Forest Service headquarters that
 
 <img src="favicons/favicon-32x32.png" align="top"> &nbsp; [Click here for the zipped set](https://github.com/wallowadigitalexhibits/whc-utilities/blob/main/favicons/favicons.zip?raw=true).
 
+## json2csv
 
+If the given JSON file is a list of objects which conform to the GraphletJS schema, separate the objects into sets by object label and produce a CSV file for each label.
