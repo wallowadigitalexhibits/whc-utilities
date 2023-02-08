@@ -9,4 +9,8 @@ Fashioned after the inset trees on the historic Forest Service headquarters that
 
 ## json2csv
 
-If the given JSON file is a list of objects which conform to the GraphletJS schema, separate the objects into sets by object label and produce a CSV file for each label.
+If the given JSON file is a list of objects which conform to the [GraphletJS](https://github.com/wallowadigitalexhibits/graphletjs) schema, separate the objects into sets by object label and produce a CSV file for each label.
+
+## csv2json
+
+Given a single CSV file, produce a list of objects in JSON that satisfy the [GraphletJS](https://github.com/wallowadigitalexhibits/graphletjs) schema.
