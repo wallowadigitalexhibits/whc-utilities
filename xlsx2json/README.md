@@ -6,12 +6,8 @@ An example schema from our Wallowa History Center Archive App is saved in this r
 
 ## Usage
 
-First, install `pandas`, probably by way of [Anaconda](https://docs.continuum.io/anaconda/install/).
-
-Next,
-
 ```
-pip install odfpy
+sudo apt install python3-pandas
 ./xlsx2json.py --schema=archive-app.json --existing-db=db.json --force=skip in.xlsx out.json
 ```
 
