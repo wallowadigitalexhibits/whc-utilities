@@ -3,7 +3,7 @@
 import sys
 
 def main():
-  print('csv2json')
+  print('json2xlsx')
 
 if __name__ == '__main__':
   main()

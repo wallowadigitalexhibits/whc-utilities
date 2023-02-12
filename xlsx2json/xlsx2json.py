@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-import sys
+import sys, pandas
 
 def main():
-  print('json2csv')
+  print('xlsx2json')
 
 if __name__ == '__main__':
   main()
