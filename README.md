@@ -1,7 +1,7 @@
 # Wallowa History Center Utilities
 JavaScript and Python scripts and other one-offs for use in WHC projects.
 
-### Favicons
+## Favicons
 
 Fashioned after the inset trees on the historic Forest Service headquarters that is our visitor center, this set of favicons can be used in any Wallowa History Center digital exhibits. 
 
