@@ -1,21 +1,25 @@
 # xlsx2json
 
-This utility converts a single .xlsx or .ods file into a JSON file compatible with <a href="https://github.com/wallowadigitalexhibits/archive-app">Archive App</a> and the <a href="https://github.com/wallowadigitalexhibits/graphletjs">GraphletJS</a> schema. 
+This utility converts a single `.xlsx` or `.ods` file into a JSON file compatible with the <a href="https://github.com/wallowadigitalexhibits/graphletjs">GraphletJS</a> schema. 
 
-The specific Archive App reference schema is available in our [Wallowa History Center Programmers' Documentation](https://github.com/wallowadigitalexhibits/whc-documentation).
+An example schema from our Wallowa History Center Archive App is saved in this repo as [archive-app.json](archive-app.json). 
 
 ## Usage
 
+First, install `pandas`, probably by way of [Anaconda](https://docs.continuum.io/anaconda/install/).
+
+Next,
+
 ```
-pip install odfpy pandas
-./xlsx.py --existing-db=db.json --force=skip in.xlsx out.json
+pip install odfpy
+./xlsx2json.py --schema=archive-app.json --existing-db=db.json --force=skip in.xlsx out.json
 ```
 
 The script takes `.xlsx` and `.ods` files, and outputs a `.json` file containing a list of node objects. 
 
-<img src="img/sheets.jpg">
-
 Each sheet in the spreadsheet must have the type of node, which must be one of the following: `Item`, `Keyword`, `ItemAcquisitionRecord`, `List`, `User`. You can see the `nodes.json` file for the resulting schema.
+
+<img src="img/sheets.jpg">
 
 The spreadsheet must contain a header row. The first item in the header row must be the `id` to be stored in `core_props`. It will merge whatever columns exist into the reference schema node, leaving non-specified entries blank or in their default value. This means you can have a sheet called `Item` that only has `id`, `strTitle`, and `strDescription`, but still end up with a compliant `db.json` of nodes where the only values known are the title and description. 
 
