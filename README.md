@@ -1,5 +1,5 @@
 # Wallowa History Center Utilities
-JavaScript and Python scripts and other one-offs for use in WHC projects.
+ JavaScript scripts and other useful things for WHC projects. 
 
 ## Favicons
 
